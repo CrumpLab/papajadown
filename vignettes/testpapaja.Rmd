@@ -76,21 +76,32 @@ In this example I created a data.frame called `test_data`, and saved it to a `da
 
 
 # Methods
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+If this was an APA paper, method section would go here.
 
 ## Participants
 
+Stuff about participants would go here.
+
 ## Material
+
+Description of materials for the experiment would go here.
 
 ## Procedure
 
+Description of procedure goes here.
+
 ## Data analysis
-We used `r cite_r("r-references.bib")` for all our analyses.
+We used `r cite_r("r-references.bib")` for all our analyses. This line is from the papaja template.
 
 
 # Results
 
+Some analyses might go here. 
+
 # Discussion
+
+Discussion etc.
 
 
 \newpage
