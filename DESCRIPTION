@@ -2,7 +2,7 @@ Package: papajadown
 Type: Package
 Title: Sharing a papaja paper using pkgdown
 Version: 0.1.0
-Author: Matthew Crump
+Authors@R: person("Matthew", "Crump", role = c("aut", "cre"), email = "mcrump@brooklyn.cuny.edu")
 Maintainer: The package maintainer <mcrump@brooklyn.cuny.edu>
 Description: Sharing a papaja paper using pkgdown
 License: ?

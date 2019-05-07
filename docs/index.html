@@ -73,9 +73,22 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#papajadown" class="anchor"></a>papajadown</h1></div>
 <p>This is a template and minimal example for using papaja and pkgdown to share the results of a research project on the web. papaja is used to write an APA style manuscript. pkgdown is used to create a website from an R package. Putting the two together let’s you share the APA paper in the form of a pkgdown website. This has the added benefit of being able to share the whole project as an R package, along with data (and pretty documentation for the data), and any custom functions used for analysis.</p>
+<p>Documentation for functions and data appear in the reference tab, and the APA article appears (web-version) in the articles tab. This is a very minimal example with no addedd customization. The website produced by pkgdown can be further customized with some tweaking.</p>
+<div id="the-rundown" class="section level2">
+<h2 class="hasAnchor">
+<a href="#the-rundown" class="anchor"></a>The rundown</h2>
+<ol>
+<li>Make a new R project in R-studio, choose new R package</li>
+<li>Make a vignettes folder, make a new papaja template .rmd file in that folder and write your APA paper</li>
+<li>create a data folder, but your .RData files in that folder</li>
+<li>write documentation for the data files in the R folder, using roxygen2</li>
+<li>build the website using pkgdown `pkgdown::build_site()</li>
+<li>Everything gets compiled into a docs folder, share the website on github using github pages (which serves the content in the docs folder).</li>
+</ol>
 <p>The source files are located in this github repository <a href="https://github.com/CrumpLab/papajadown">https://github.com/CrumpLab/papajadown</a></p>
 <p>If you are seeing this from the github repo, then the website is <a href="https://crumplab.github.io/papajadown/">https://crumplab.github.io/papajadown/</a></p>
-<p>Note: this example is in development, but the basics seem to work.</p>
+<p>Note: this example is in development, but the basics seem to work. Will improve over time.</p>
+</div>
 </div>
   </div>
 
@@ -89,7 +102,7 @@
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>The package maintainer <br><small class="roles"> Maintainer </small>  </li>
+<li>Matthew Crump <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
@@ -97,7 +110,7 @@
 </div>
 
       <footer><div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Matthew Crump.</p>
 </div>
 
 <div class="pkgdown">

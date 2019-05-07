@@ -17,6 +17,6 @@
 test_data
 }
 \description{
-A dataset for testing
+A dataset for testing roxygen2 for documenting a data frame
 }
 \keyword{datasets}
