@@ -1,0 +1,108 @@
+---
+title             : "Using papaja and pkgdown to share research"
+shorttitle        : "papaja meets pkgdown"
+
+author: 
+  - name          : "Matthew Crump"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "2900 Bedford Avenue"
+    email         : "mcrump@brooklyn.cuny.edu"
+
+affiliation:
+  - id            : "1"
+    institution   : "Brooklyn College of the City University of New York"
+
+authornote: |
+  Enter author note here...thanks to the developers of papaja and pkgdown for making this easy.
+
+abstract: |
+  This is a template and tutorial for using papaja and pkgdown to share the results of a research project on the web. papaja is used to write an APA style manuscript. pkgdown is used to create a website from an R package. Putting the two together let's you share the APA paper in the form of a pkgdown website. This has the added benefit of being able to share the whole project as an R package, along with data (and pretty documentation for the data), and any custom functions used for analysis.
+  
+keywords          : "papaja, pkgdown, open science"
+wordcount         : "X"
+
+bibliography      : ["r-references.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+```
+
+```{r analysis-preferences, echo=FALSE}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+# Introduction
+
+This introduction will briefly describe the steps I took to make this template.
+
+1. First, install papaja for writing APA papers. This .Rmd file was created by modifying the template .Rmd file from papaja. 
+
+Documentation for papaja can be found here [https://crsh.github.io/papaja_man/](https://crsh.github.io/papaja_man/)
+
+Installation instructions for papaja are here: [https://crsh.github.io/papaja_man/introduction.html#getting-started](https://crsh.github.io/papaja_man/introduction.html#getting-started)
+
+2. Install pkgdown [https://pkgdown.r-lib.org](https://pkgdown.r-lib.org)
+
+3. Also, read up a bit on making R-packages here [http://r-pkgs.had.co.nz](http://r-pkgs.had.co.nz)
+
+4. Install the roxygen2 package.
+
+## Using papaja and pkgdown together
+
+1. Create a new R project in R-studio, and choose the "R project" type.
+2. Add a "vignettes" folder, then create a new .Rmd file using the papaja template (or modify this one)
+3. If you want to test if things are working, then run `pkgdown::build_site()` in the console. This should build a simple website. The reference tab will be used to list any custom functions that you use in your data-analysis, and to list data files along with documentation for the data files. The articles tab will display a web-based version of the papaja manuscript.
+
+## Documenting data
+
+In this example I created a data.frame called `test_data`, and saved it to a `data` folder in the R project. I then added a `data.R` file to the `R` folder (which stores R scripts). This file uses roxygen2 to document details about this test data set. There is plenty of more info about this in th R-packages book by Hadley Wickham [http://r-pkgs.had.co.nz](http://r-pkgs.had.co.nz)
+
+
+
+# Methods
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
