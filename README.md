@@ -17,4 +17,14 @@ The source files are located in this github repository [https://github.com/Crump
 
 If you are seeing this from the github repo, then the website is [https://crumplab.github.io/papajadown/](https://crumplab.github.io/papajadown/)
 
+## Try this out
+
+1. Fork the repo, or download it
+2. Open the .rProj file in R-studio
+3. Make sure `papaja`, `roxygen2`, and `pkgdown` libraries are installed
+4. run `pkgdown::build_site()` in the console. This should build the website.
+5. Modify the .rmd file in the vignette folder to change the APA paper. 
+6. Modify everything in this repo to change it to things you want to say.
+
+
 Note: this example is in development, but the basics seem to work. Will improve over time.

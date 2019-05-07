@@ -73,7 +73,7 @@ Installation instructions for papaja are here: [https://crsh.github.io/papaja_ma
 
 In this example I created a data.frame called `test_data`, and saved it to a `data` folder in the R project. I then added a `data.R` file to the `R` folder (which stores R scripts). This file uses roxygen2 to document details about this test data set. There is plenty of more info about this in th R-packages book by Hadley Wickham [http://r-pkgs.had.co.nz](http://r-pkgs.had.co.nz)
 
-
+## The rest is where the APA paper would go
 
 # Methods
 
