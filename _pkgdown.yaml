@@ -1,0 +1,24 @@
+template:
+  params:
+    bootswatch: readable
+
+authors:
+  Matthew Crump:
+    href: https://crumplab.github.io
+
+navbar:
+  structure:
+    left:  [home, articles, reference,news]
+    right: [github, twitter]
+  components:
+    home: ~
+    articles:
+      - text: Vignettes
+    reference:
+      - text: data
+    twitter:
+      icon: fa-lg fa-twitter
+      href: https://twitter.com/MattCrump_
+    github:
+      icon: fa-lg fa-github
+      href: https://github.com/CrumpLab/papajadown
