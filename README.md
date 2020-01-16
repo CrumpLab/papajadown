@@ -1,5 +1,7 @@
 # papajadown
 
+**NOTE:** This is a defunct example. See `vertical` for an improved and expanded version <https://crumplab.github.io/vertical/>
+
 This is a template and minimal example for using papaja and pkgdown to share the results of a research project on the web. papaja is used to write an APA style manuscript. pkgdown is used to create a website from an R package. Putting the two together let's you share the APA paper in the form of a pkgdown website. This has the added benefit of being able to share the whole project as an R package, along with data (and pretty documentation for the data), and any custom functions used for analysis.
 
 Documentation for functions and data appear in the reference tab, and the APA article appears (web-version) in the articles tab. This is a very minimal example with no addedd customization. The website produced by pkgdown can be further customized with some tweaking.
